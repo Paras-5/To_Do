@@ -8,6 +8,7 @@ window.onload = function() {
 function addElement() {
   if (document.querySelector(".addnts").value.trim() != "") {
     e.push(document.querySelector(".addnts").value.trim());
+    document.querySelector(".addnts").value="";
     if (localStorage.getItem("e") == null) {
       localStorage.setItem("e", JSON.stringify(e));
     } else {
